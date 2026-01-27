@@ -1,0 +1,6 @@
+<script>start("/Users/alizhantulep/Desktop/Wed-Dev/Lab 1/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("KhanAcademy","KhanAcademy",1,192,"192 B",1769371802,"1/26/26, 1:10:02 AM");</script>
+<script>addRow("udacity","udacity",1,288,"288 B",1769494324,"1/27/26, 11:12:04 AM");</script>
+<script>addRow("w3","w3",1,960,"960 B",1769462422,"1/27/26, 2:20:22 AM");</script>
+<script>addRow(".DS_Store",".DS_Store",0,10244,"10.0 kB",1769493196,"1/27/26, 10:53:16 AM");</script>
