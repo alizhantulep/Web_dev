@@ -1,0 +1,129 @@
+
+        body {
+            margin:0px;
+            background-color: #F0F2F5; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main h1{
+            color: #0066ff;
+            font-size: 70px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            margin-top: -250px;
+        }
+        
+        .main{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            gap:80px;
+        }
+        .right{
+            background-color: white;
+            border-radius: 10px;
+            padding-bottom: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        }
+        .for{
+            display:flex;
+            flex-direction: column;
+            padding:30px 25px;
+            gap:20px;
+        }
+        .for button{
+            text-align: center;
+            border-radius:7px;
+            box-shadow: 0px 0px 0px;
+            background-color: #0066ff;
+            color:white;
+            padding:10px 2px;
+            display:flex;
+            justify-content: center;
+            font-weight: bold;
+            cursor:pointer;
+            font-size:15px;
+        }
+        .for button:hover{
+            background-color:rgb(0, 119, 255);
+        }
+        .for a{
+            display:block;
+            font-size:15px;
+            color:#0066ff;
+            text-align:center;
+            text-decoration: none;
+            padding: 0px;
+            margin:0px;
+        }
+        .for a:hover{
+            text-decoration: underline;
+        }
+        hr{
+            border:none;
+            height:0.5px;
+            background-color: #909cad;
+            margin:0px 0;
+        }
+        .registration{
+            margin: 15px auto;
+            padding:12px 10px;
+            cursor:pointer;
+            font-weight:bold;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            border-radius: 7px;
+            text-align: center;
+            background-color: rgb(2, 142, 2);
+            color:white;
+        }
+        .text{
+            padding:10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            width: 100%;
+            font-size:15px;
+            box-sizing: border-box;  
+            outline: none;     
+            transition: border 0.3s;           
+        }
+        .str{
+            font-size: 15px;
+        }
+        .desl{
+            font-size:20px;
+        }
+        .righ{
+            margin-top:-300px;
+        }
+        .str a.rr:hover {
+            text-decoration:underline;
+        }
+        .str a.rr{
+            color: black;
+            text-decoration:none;
+            font-weight: bold;
+        }
+        .footer{
+            padding:20px;
+            text-align: center;
+            font-size:12px;
+            background-color: white;
+        }
+        .footer hr{
+            height:1px;
+            background-color: #ccc;
+            border:none;
+            margin:10px 0;
+        }
+        .pass{
+            padding:10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            width: 100%;
+            box-sizing: border-box;  
+            outline: none;     
+            transition: border 0.3s; 
+            font-size:15px;
+        }
