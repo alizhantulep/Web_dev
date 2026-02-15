@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <script>
+        let message = "Hello!";
+        let phrase = message;
+        let user ={
+            name:"John"
+        }
+        let admin = user;
+
+        admin.name = 'Pete';
+        alert(user.name);
+
+        let a ={};
+        let b = {};
+        alert(a==b);
+        
+        let clone = {};
+
+        let permissions1 = { canView : true};
+        let permissions2 = {canEdit : true};
+
+        Object.assign(user,permission1, permission2);
+
+        alert(user.name);
+        alert(user.canView);
+        alert(user.canEdit);
+        let us = {
+            name: "John",
+            sizes: {
+                height: 182,
+                width: 50
+            }
+            };
+
+        alert( us.sizes.height ); // 182
+    </script>
+</body>

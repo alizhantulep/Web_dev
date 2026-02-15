@@ -1,0 +1,13 @@
+let message = "hello";
+let n       = 123;       
+alert(1/0);        
+alert(-1/0);       
+alert("not"/2);    
+const bigInt =1234567890123456789012345678901234567890n;
+alert(`the result is ${1+2}`);
+alert('the result is ${1+2}');
+let nameFieldChecked = true;
+let age = null;   
+let agg;          
+alert(agg);     
+typeof Math;                  
