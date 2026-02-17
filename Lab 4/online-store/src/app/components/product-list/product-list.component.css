@@ -1,0 +1,11 @@
+.product-grid {
+    display: grid;
+    /* Автоматически создает колонки шириной не менее 280px */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
+    padding: 50px;
+    /* Это свойство заставляет карточки растягиваться по вертикали */
+    align-items: stretch; 
+    margin-bottom:100px;
+    border-bottom:20px;
+  }
