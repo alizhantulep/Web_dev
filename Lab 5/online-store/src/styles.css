@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+#a2 {
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    
+    /* Добавляем эти две строки */
+    width: 100%; 
+    display: block; 
+    
+    /* Убираем возможные внешние отступы самого блока */
+    margin: 0; 
+}

@@ -1,0 +1,38 @@
+<div class="card">
+  <button class="delete-btn" (click)="onDelete()">×</button>
+
+  <img [src]="mainImage" class="main-image">
+  
+  <div class="gallery">
+    @for (img of product.images; track img) {
+      <img [src]="img" 
+           (click)="selectImage(img)" 
+           class="thumb" 
+           [class.active]="img === mainImage">
+    }
+  </div>
+
+  <h3>{{ product.name }}</h3>
+  <p class="desc">{{ product.description }}</p>
+  
+  <div class="footer"> <p class="price">{{ product.price | number }} KZT</p>
+    
+    <div class="rating">
+      @for (star of starsArray(product.rating); track $index) {
+        <span>{{ star }}</span>
+      }
+    </div>
+
+    <div class="share">
+      <a [href]="whatsappLink" target="_blank" class="wa">WhatsApp</a>
+      <a [href]="telegramLink" target="_blank" class="tg">Telegram</a>
+    </div>
+
+    <a [href]="product.link" target="_blank" class="buy-btn">Купить на Kaspi</a>
+  </div>
+</div>
+<div class="like-container">
+  <button (click)="addLike()" class="like-btn">
+    <span [class.liked]="product.likes > 0">❤</span> {{ product.likes }}
+  </button>
+</div>

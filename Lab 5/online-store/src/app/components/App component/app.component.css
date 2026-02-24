@@ -1,0 +1,58 @@
+/* 1. Убираем отступы у самой страницы */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+#a2 {
+    color: white;
+    background-color: #f14635;
+    text-align: center;
+    padding: 20px;
+    
+    margin: 0; 
+    
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-10px;
+}
+.ss{
+    size:5px;
+}
+.category-title{
+    text-align:center;
+}
+/* Обращаемся напрямую к кнопкам внутри навигации */
+.category-list {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.category-list button.ss {
+    padding: 15px 35px !important; /* Увеличиваем наверняка */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.category-list button.ss.active {
+    background-color: #f14635;
+    color: white;
+    border-color: #f14635;
+}
