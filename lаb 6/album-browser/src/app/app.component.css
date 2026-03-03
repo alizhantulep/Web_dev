@@ -1,0 +1,14 @@
+nav a { margin: 0 10px; text-decoration: none; color: blue; }
+.active { font-weight: bold; color: darkred; }
+.active-link {
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .album-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }

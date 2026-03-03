@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --accent: #6366f1; 
+  --accent-hover: #4f46e5;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --danger: #ef4444;
+  --success: #10b981;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 40px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.active-link {
+  color: var(--accent) !important;
+  background: rgba(99, 102, 241, 0.15);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .album-item, .photo-card {
+    animation: fadeIn 0.5s ease forwards;
+  }

@@ -1,0 +1,46 @@
+
+.album-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .album-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom: 12px;
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+  }
+  
+  .album-item:hover {
+    transform: translateX(10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .album-info {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .delete-btn {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .delete-btn:hover {
+    background: var(--danger);
+    color: white;
+  }
